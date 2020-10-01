@@ -80,8 +80,8 @@ img {
 }
 
 .bg-primary {
-  background-color: #333;
-  color: #f7c08a;
+  background-color: #f7c08a;
+  color: #333;
 }
 
 #navbar {
@@ -162,4 +162,27 @@ img {
 
 #home-info .info-content p {
   padding-bottom: 30px;
+}
+
+/* Features */
+#features {
+  display: flex;
+}
+
+.box {
+  width: 33.3%;
+  text-align: center;
+  padding: 50px;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
 }

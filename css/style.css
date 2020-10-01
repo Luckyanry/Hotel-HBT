@@ -27,9 +27,10 @@ img {
   height: auto;
 }
 
-/* p {
-    margin: 10px 0;
-} */
+p:not(:last-child) {
+  /* margin: 10px 0; */
+  padding-bottom: 10px;
+}
 
 .container {
   display: flex;
@@ -84,6 +85,24 @@ img {
   color: #333;
 }
 
+.large-heading {
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
+
+/* Navbar */
 #navbar {
   background-color: #333;
   color: #fff;
@@ -102,7 +121,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 260px;
+  width: 257px;
   list-style: none;
 }
 
@@ -177,6 +196,61 @@ img {
 
 .box i {
   margin-bottom: 10px;
+}
+
+/* About Info */
+#about-info .info-right {
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  display: block;
+  width: 70%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#about-info .info-left {
+  width: 50%;
+  min-height: 100%;
+}
+
+/* Testimonials */
+#testimonials {
+  height: 600px;
+  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#testimonials .container {
+  display: block;
+  vertical-align: middle;
+}
+
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+.testimonial:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+#testimonials .testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 /* Footer */

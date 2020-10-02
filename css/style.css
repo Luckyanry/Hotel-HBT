@@ -35,8 +35,6 @@ p:not(:last-child) {
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
@@ -110,6 +108,11 @@ p:not(:last-child) {
   overflow: auto;
 }
 
+#navbar .container {
+  align-items: center;
+  justify-content: space-between;
+}
+
 #navbar a {
   color: #fff;
 }
@@ -122,7 +125,7 @@ p:not(:last-child) {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 257px;
+  width: 24.2%;
   list-style: none;
 }
 
@@ -142,6 +145,10 @@ p:not(:last-child) {
 #showcase {
   background: url("../img/showcase.jpg") no-repeat center center/cover;
   height: 600px;
+}
+
+#showcase .container {
+  display: block;
 }
 
 #showcase .showcase-content {
@@ -255,6 +262,10 @@ p:not(:last-child) {
 }
 
 /* Contact Form */
+#contact-form .container {
+  display: block;
+}
+
 #contact-form .form-group {
   margin-bottom: 20px;
 }

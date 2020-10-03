@@ -29,13 +29,12 @@ img {
 }
 
 p:not(:last-child) {
-  /* margin: 10px 0; */
   padding-bottom: 10px;
 }
 
 .container {
   display: flex;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   overflow: auto;
@@ -86,6 +85,7 @@ p:not(:last-child) {
 
 .large-heading {
   font-size: 40px;
+  line-height: 1.2;
 }
 
 /* Padding */
@@ -117,15 +117,15 @@ p:not(:last-child) {
   color: #fff;
 }
 
-.logo {
+#navbar .logo {
   padding-top: 20px;
 }
 
-.navbar__list {
+#navbar .navbar__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 24.2%;
+  /* width: 24.2%; */
   list-style: none;
 }
 
@@ -170,12 +170,12 @@ p:not(:last-child) {
 /* Home Info */
 #home-info {
   display: flex;
-  height: 400px;
+  height: auto;
 }
 
 #home-info .info-img {
   width: 50%;
-  background: url("../img/photo-1.jpg") no-repeat;
+  background: url("../img/photo-1.jpg") no-repeat center/cover;
   min-height: 100%;
 }
 
@@ -207,26 +207,27 @@ p:not(:last-child) {
 }
 
 /* About Info */
-#about-info .info-right {
-  width: 50%;
-  min-height: 100%;
-}
-
-#about-info .info-right img {
-  display: block;
-  width: 70%;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
+#about-info .info-right,
 #about-info .info-left {
   width: 50%;
   min-height: 100%;
 }
 
+#about-info .info-right {
+  display: flex;
+  margin: auto;
+}
+
+#about-info .info-right img {
+  display: flex;
+  width: 70%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
 /* Testimonials */
 #testimonials {
-  height: 600px;
+  height: auto;
   background: url("../img/test-bg.jpg") no-repeat center center/cover;
   padding-top: 100px;
 }
